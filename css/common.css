@@ -1,0 +1,532 @@
+.tmpl{
+    margin-top: 40px;
+    margin-bottom: 50px;
+    background-color: #fff;
+}
+
+
+@charset "utf-8";
+/* CSS Document */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff ;
+  background-image: none !important;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #333333;
+}
+
+body a {
+  outline: none;
+  blr: expression(this.onFocus = this.blur ());
+  -moz-outline-style: none;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, button, textarea, p, blockquote, th, td {
+  margin: 0;
+  padding: 0;
+  font-family: "微软雅黑" !important;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+table td.bg-f8{ 
+  background-color: #f8f8f8 ;
+}
+
+fieldset, img {
+  border: 0
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal
+}
+
+ol, ul, li {
+  list-style: none;
+}
+
+caption, th {
+  text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: normal
+}
+i{
+   font-style: normal;
+}
+abbr, acronym {
+  border: 0
+}
+
+body, button, input, select, textarea {
+  font-family: 'titilliumregular', "微软雅黑";
+}
+
+textarea{
+ resize : none ;  
+}
+
+a {
+  text-decoration: none !important;
+  color: #134ea5;
+  transition: background-color .3s ease 0s, background-img .3s ease 0s,
+    width .3s ease 0s, border-color .3s ease 0s, border-width .3s ease 0s;
+  -webkit-transition: background-color .3s ease 0s, width .3s ease 0s,
+    border-color .3s ease 0s, border-width .3s ease 0s;
+}
+
+a.cursor{ cursor: pointer !important ;}
+
+a:link {
+  color: #333;
+}
+
+a:hover {
+  color: #134ea5;
+}
+
+.clearfix {
+  zoom: 1;
+}
+
+.clearfix:after {
+  content: ".";
+  line-height: 0;
+  height: 0;
+  display: block;
+  clear: both;
+  visibility: hidden;
+}
+.hide {
+  display: none;
+}
+input[type="text"], textarea, select {
+  border: 1px solid #d8dde6;
+  font-size: 14px ;
+  color: #333 ;
+}
+
+input[type="text"], select{
+  height: 32px;
+  line-height: 32px;  
+}
+
+input.inp-sm {
+  height: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+input[text] {
+  cursor: pointer;
+}
+
+iframe {
+  padding: 0px;
+  margin: 0px;
+  border: 0px;
+}
+
+-moz-document url-prefix () {input .input_flie[type=file] { border:1px solid #d8dde6!important;
+  height: 28px;
+  line-height: 28px;
+  width: 200px;
+  position: relative;
+  top: 0px !important;
+  margin: 0px 5px;
+}
+
+}
+
+/*html5*/
+article, aside, dialog, footer, header, section, footer, nav, figure,
+  menu {
+  display: block;
+}
+
+.marginbtm10 {
+  margin-bottom: 10px;
+}
+
+.fr {
+  float: right !important;
+}
+
+input, button {
+  outline: none;
+}
+
+.padding-top{
+    padding-top: 15px ;   
+}
+
+.p15{ padding: 15px ; }
+
+.pb10 {
+  padding-bottom: 10px;
+}
+
+.p25 {
+  padding: 25px !important;
+}
+
+/*line style*/
+
+.line-e6e{
+  height: 1px ; 
+  border-bottom: 1px solid #e6e9f0 ;
+}
+
+.block10 {
+  height: 10px;
+  width: 100%;
+}
+
+.block20 {
+  height: 20px;
+  width: 100%;
+}
+
+/*text-align*/
+.text-center {
+  text-align: center !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+/*font color*/
+.text-green {
+  color: #008000;
+}
+
+.text-blue ,
+a.link-blue {
+  color: #056dae;
+}
+
+.text-orange {
+  color: #fa954a;
+}
+
+.text-red {
+  color: #f20000 !important;
+}/*新版本更新的样式*/
+
+.text-gray {
+  color: #999;
+}
+
+.font-bold{ font-weight: bold ;}
+/*float*/
+.pull-left {
+  float: left;
+}
+
+.pull-right {
+  float: right;
+}
+
+/* sideBar */
+#sideBar {
+  float: left;
+  position: relative;
+  height: 100%;
+  z-index: 9;
+}
+
+.sideBar-open {
+  width: 200px;
+  display: none;
+}
+
+.sideBar {
+  width: 55px;
+}
+
+.sideBar, .sideBar-open {
+  height: 100%;
+  background: #25283c;
+  color: #fff;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 650;
+}
+
+.sideBar a, .sideBar-open a {
+  display: block;
+  color: #fff;
+  border-bottom: 1px solid #181d2e;
+}
+
+.sideBar a i, .sideBar-open a i {
+  width: 20px;
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.sideBar-memu-open, .sideBar-memu {
+  cursor: pointer;
+  padding: 15px 0 10px 18px;
+}
+.warp .sideBar .sideBar-list{
+      display: none;
+}
+.sideBar-list a {
+  display: block;
+  padding: 12px 18px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-bottom:0;
+}
+
+.sideBar-list>li:hover {
+  background: #11142b;
+}
+
+.sideBar-list li {
+  position: relative;
+  border-top: 1px solid #24293a;
+  border-bottom: 1px solid #181d2e;
+}
+
+.sideBar-list li a span.tooltips {
+  display: none;
+}
+
+.sideBar-list li a:hover span.tooltips {
+  position: absolute;
+  z-index: 999;
+  top: 3px;
+  left: 55px;
+  display: inline-block;
+}
+
+.sideBar-list li span.tooltips-con {
+  position: absolute;
+  left: 7px;
+  color: #fff;
+  padding: 10px 15px;
+  background: #174a97;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.sideBar-list li .tooltips i {
+  position: absolute;
+  left: 0px;
+  color: #fff;
+  width: 7px;
+  height: 14px;
+  margin-top: 12px;
+}
+
+.sideBar-open {
+  width: 200 !important;
+}
+.qh-user {
+    float: right;
+    margin-right: 15px;
+    padding: 0 20px;
+    font-weight: 500;
+    line-height: 53px;
+}
+
+
+// header
+ /*header begin*/
+header {
+    width: 100%;
+    color: #fff;
+}
+.header{
+    height: 55px;
+    background: #2d3048;
+}
+header .logo_img{
+    float: left;
+    margin-top: 10px;
+    margin-left: 18px;
+    margin-right:100px;
+}
+header .header_nav{
+    float: left;
+    height: 55px;
+    line-height: 55px;
+}
+header .header_nav .header_icon li{
+    float: left;
+    width: 60px;
+    text-align: center;
+}
+header .header_nav .header_icon li a{
+    width: 60px;
+    height: 56px;
+    display: inline-block;
+}
+header .header_nav .header_icon li i{
+    font-size: 20px;
+}
+header .header_nav ul li:hover{
+    background: #11142b;
+    width: 60px;
+}
+a.qh-user:hover{
+   background-color: #11142b;
+}
+/*header end*/ 
+
+// sideBar
+// 二级菜单
+.tooltip{
+  height: 30px ! important;
+  width: 80px;
+  padding: 0 20px;
+  line-height: 30px;
+  font-size: 13px;
+  display: block;
+}
+// .tooltip-arrow,.tooltip-inner{
+//     background-color:#11142b; 
+// }
+.tooltip-inner{
+  display:inline-block;
+  height:35px;
+  padding:0 20px;
+  font-size:13px;
+  line-height:30px;
+  background-color:#11142b; 
+}
+.arrow_left_ico{       
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-right: 8px solid black;
+  border-bottom: 8px solid transparent;
+}
+.sideBar-memu:hover,.sideBar-memu-open:hover{
+  color:#fff;
+}
+.sideBar-list li span.tooltips-con{
+  background: #11142b;
+}
+.sideBar-list li a:visited{
+ color:#fff;
+}
+.sideBar-list li:hover span{
+  color: #fff;
+}   
+
+/*warp start*/
+.warp{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.qh-user {
+    float: right;
+    margin-right: 15px;
+    padding: 0 20px;
+    font-weight: 500;
+    line-height: 53px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.qh-user:hover {
+    background: #16315c;
+    color: #fff;
+}
+.pull-right {
+    float: right;
+}
+.pull-right>.dropdown-menu {
+    right: 15px;
+    z-index: 1005
+}
+.el-menu{
+    height: 55px;
+    background: #2d3048;
+}
+
+.get-more{
+   width: 39px;
+   height: 39px;
+   border-left: 1px solid #ccc;
+   text-align: center;
+}
+.get-more i{
+  color: #000;
+}
+.form-more{
+  position: absolute;
+  top: 0px;
+  right: 0;
+  z-index: 999;
+  padding-top: 9px;
+}
+
+//二级菜单内容
+.right-warp{
+    position: absolute;
+    width: 96.6%;
+    left: 55px;
+    background-color: #fbfbfb;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.right-warp .right-search{
+    margin-right: 30px;
+}
+
+/*面包屑*/
+.main{
+    padding: 0px;
+    position: relative;
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid #38b5e6;
+}
+.main .crumbs p{
+    text-align: center;
+    height: 48px;
+    width: 110px; 
+    position: absolute;
+    border-bottom: 3px solid #38b5e6;
+}
+
+.main .pull-right{
+    float: right
+}
+
+.crumbs span.noBorBot{
+    border-bottom: transparent
+}
+.border-bottom{
+    border-bottom:1px solid #E5E5E5;
+}

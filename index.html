@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" type="text/css" href="./packages/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="./packages/element-ui/lib/theme-default/index.css">
+  <link rel="stylesheet" href="./icon_font/iconfont.css">
+  <link rel="stylesheet" href="./css/home.css">
+</head>
+<body>
+    <div id="app">
+       <!--heaer begin-->
+      <header class="dropdown header">
+              <div class="logo_img">
+                  <img src="./images/logo.png" height="37" width="220">
+              </div>
+              
+              <!--样式内容为layout.css 509行至559行-->
+              <div class="header_nav">
+                  <ul class="header_icon" id="header_icon">
+                      <li data-toggle="tooltip" data-placement="bottom" title="运营 ">
+                          <a href="#" class="icon_home"><i class="iconfont icon-home"></i></a>
+                          <!-- <router-link to="/home">home</router-link> -->
+                      </li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="运营门户 ">
+                          <a href="#" class="icon_portal"><i class="iconfont icon-portal"></i></a>
+                      </li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="运营门户 ">
+                          <a href="#" class="icon_inspect"><i class="iconfont icon-inspect"></i></a>
+                      </li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="CMDB ">
+                         <a href="./cmdbAccountDetail.html" class="icon_wOrder"><i class="iconfont icon-wOrder"></i></a>
+                          <!-- <a href="#" class="icon_wOrder" ><i class="iconfont icon-wOrder"></i></a> -->
+                      </li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="运营门户 ">
+                          <a href="#" class="icon_qua"><i class="iconfont icon-qua"></i></a>
+                      </li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="运营门户 ">
+                          <a href="#" class="icon_track"><i class="iconfont icon-track"></i></a>
+                      </li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="运营门户 ">
+                          <a href="#" class="icon_train"><i class="iconfont icon-train"></i></a>
+                      </li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="运营门户 ">
+                          <a href="#" class="icon_security"><i class="iconfont icon-security"></i></a>
+                      </li>
+
+                  </ul>
+              </div>               
+
+              <div class="pull-right">
+                   <!--必须引用<a></a> 和data-toggle="dropdown"属性和class="dropdown-menu"才能调用-->
+                  <a class="qh-user cursor" id="dropdownMenu1" data-toggle="dropdown">
+                      <i class="iconfont icon-user"></i> <span> 超级管理员 </span>
+                      <i class="iconfont icon-arrow-down"></i>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li class="dropdown-li" role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-user mr5"></i>个人中心</a></li>
+                      <li class="dropdown-li" role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-sign-out mr5"></i>退出</a></li>
+                  </ul>
+
+                  <a class="qh-user cursor">
+                      <i class="iconfont icon-help"></i>
+                  </a>
+                  <a class="qh-user cursor">
+                      <i class="iconfont icon-set"></i>
+                  </a>
+
+              </div>
+      </header>
+      <!--header end-->
+
+      <!-- 二级菜单 -->
+      <!-- content start -->
+      <div class="warp">
+          <!--sideBar begin-->
+          <div id="sideBar" class="clearfix">
+              <div class="sideBar"> <a class="sideBar-memu"><i class="glyphicon glyphicon-align-justify"></i></a>
+                  <ul class="sideBar-list">
+                      <li>
+                          <a href="#"><i class="iconfont icon-home"></i>
+                              <span class="tooltips">
+                                  <i class="arrow_left_ico"></i>
+                                  <span class="tooltips-con">发文流程</span>
+                              </span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#"><i class="iconfont icon-portal"></i>
+                              <span class="tooltips">
+                                  <i class="arrow_left_ico"></i>
+                                  <span class="tooltips-con">发文流程1</span>
+                              </span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#"><i class="iconfont icon-security"></i>
+                              <span class="tooltips">
+                                  <i class="arrow_left_ico"></i>
+                                  <span class="tooltips-con">草稿箱</span>
+                              </span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#"><i class="iconfont icon-call"></i>
+                              <span class="tooltips"><i class="arrow_left_ico"></i><span class="tooltips-con">草稿箱</span></span>
+                          </a>
+                      </li>
+                  </ul>
+              </div>
+              <div class="sideBar-open"> <a class="sideBar-memu-open"><i class="glyphicon glyphicon-align-justify"></i></a>
+                  <ul class="sideBar-list">
+                      <li><a href="#"><i class="iconfont icon-home"></i><span class="padding-left">账户集成</span></a></li>
+                      <li><a href="#"><i class="iconfont icon-portal"></i><span class="padding-left">官网集成</span></a></li>
+                      <li><a href="#"><i class="iconfont icon-security"></i><span class="padding-left">信息发布</span></a></li>
+                      <li><a href="#"><i class="iconfont icon-call"></i><span class="padding-left">建设日历</span></a></li>
+                      
+                      <li class="houbu" style="display: none;"><a href="../emerg/emerg.html"><i class="fa fa-shirtsinbulk"></i><span class="padding-left">应急指挥</span></a></li>
+                  </ul>
+              </div>
+          </div>
+          <!--sideBar end-->                
+          
+          <!-- 二级菜单内容 -->
+          <div class="right-warp" style="position: absolute;width: 96.6%;left: 55px;background-color: #fbfbfb;overflow-y: auto; overflow-x: hidden;">
+              <!--main start-->
+              <div class="main">
+                  <!--crumbs begin-->
+                  <div class="crumbs">
+                      <p>官网集成</p>
+                      <div class="pull-right right-search">
+                          <el-input
+                            placeholder="请搜索"
+                            icon="search"
+                            v-model="input2"
+                            :on-icon-click="handleIconClick">
+                          </el-input>
+                      </div>    
+                  </div>
+                  <!-- crumbs end -->                                  
+              </div>
+              <!--main end-->
+
+              <!-- content begin -->
+              <div class="content">
+                  <div class="content-top clearfix">
+                      <div class="content-top-items">
+                          <div class="top-items-title">
+                                <i class="iconfont icon-daiban" style="color:#38b5e6"></i>&nbsp;&nbsp;
+                                <span>代办事项</span>
+                                <span>
+                                  &nbsp;(<i style="color:red">20</i>/100)
+                                </span>
+                                <a href="#">
+                                  <span class="get-more pull-right">
+                                    <i class="iconfont icon-more"></i>
+                                  </span>
+                                </a>
+                          </div>
+                          <div class="top-items-content">
+                              <dl class="agency top-items-agency">
+                                <dd>
+                                   <i class="iconfont icon-email"></i>&nbsp;&nbsp;
+                                   <a href="#">后台推送前台的记录，推送栏目出错</a>
+                                   <span class="state go">进行中</span>
+                                </dd>
+                                <dd>
+                                   <i class="iconfont icon-email"></i>&nbsp;&nbsp;
+                                   <a href="#">后台推送前台的记录，推送栏目出错</a>
+                                   <span class="state complate">已完成</span>
+                                </dd>
+                                <dd>
+                                   <i class="iconfont icon-email"></i>&nbsp;&nbsp;
+                                   <a href="#">后台推送前台的记录，推送栏目出错</a>
+                                   <span class="state validate">问题验证</span>
+                                </dd>
+                                <dd>
+                                   <i class="iconfont icon-email"></i>&nbsp;&nbsp;
+                                   <a href="#">后台推送前台的记录，推送栏目出错</a>
+                                   <span class="state todo">TO DO</span>
+                                </dd>
+                                <dd>
+                                   <i class="iconfont icon-email"></i>&nbsp;&nbsp;
+                                   <a href="#">后台推送前台的记录，推送栏目出错</a>
+                                   <span class="state leave">关闭</span>
+                                </dd>
+                                <dd>
+                                   <i class="iconfont icon-email"></i>&nbsp;&nbsp;
+                                   <a href="#">后台推送前台的记录，推送栏目出错</a>
+                                   <span class="state leave">遗留</span>
+                                </dd>
+                              </dl>
+                          </div>
+                      </div>
+                      <div class="content-dynamic">
+                          <div class="top-items-title">
+                                <!-- Default panel contents -->
+                                <i class="iconfont icon-daiban" style="color:#38b5e6"></i>&nbsp;&nbsp;
+                                <span>动态</span>
+                                <a href="#">
+                                  <span class="get-more pull-right">
+                                    <i class="iconfont icon-more"></i>
+                                  </span>
+                                </a>   
+                          </div>
+                          <div class="top-item-content">
+                            <div id="news">
+                               <dl class="agency top-items-agency">
+                                <dd>
+                                   <i></i>&nbsp;&nbsp;
+                                   <a href="#">后台推送前台的记录，推送栏目出错</a>
+                                   <span class="date pull-right">2017-06-01</span>
+                                </dd>
+                                <dd>
+                                   <i></i>&nbsp;&nbsp;
+                                   <a href="#">后台推送前台的记录，推送栏目出错</a>
+                                   <span class="date pull-right">2017-06-01</span>
+                                </dd>
+                                <dd>
+                                   <i></i>&nbsp;&nbsp;
+                                   <a href="#">后台推送前台的记录，推送栏目出错</a>
+                                   <span class="date pull-right">2017-06-01</span>
+                                </dd>
+                                <dd>
+                                   <i></i>&nbsp;&nbsp;
+                                   <a href="#">后台推送前台的记录，推送栏目出错</a>
+                                   <span class="date pull-right">2017-06-01</span>
+                                </dd>
+                                <dd>
+                                   <i></i>&nbsp;&nbsp;
+                                   <a href="#">后台推送前台的记录，推送栏目出错</a>
+                                   <span class="date pull-right">2017-06-01</span>
+                                </dd>
+                                <dd>
+                                   <i></i>&nbsp;&nbsp;
+                                   <a href="#">后台推送前台的记录，推送栏目出错</a>
+                                   <span class="date pull-right">2017-06-01</span>
+                                </dd>
+                                <dd>
+                                   <i></i>&nbsp;&nbsp;
+                                   <a href="#">后台推送前台的记录，推送栏目出错</a>
+                                   <span class="date pull-right">2017-06-01</span>
+                                </dd>
+                                <dd>
+                                   <i></i>&nbsp;&nbsp;
+                                   <a href="#">后台推送前台的记录，推送栏目出错</a>
+                                   <span class="date pull-right">2017-06-01</span>
+                                </dd>
+                              </dl>
+                            </div>   
+                          </div>
+                      </div>
+                  </div>
+
+
+                  <div class="content-bottom clearfix">
+                      <div class="content-bottom-forms" id="content-bottom-forms">
+                          <a href="#">
+                              <span class="get-more pull-right form-more">
+                                    <i class="iconfont icon-more"></i>
+                              </span>
+                          </a>
+                          
+                          <el-tabs v-model="activeName" @tab-click="handleClick">
+                            <el-tab-pane label="工单统计报表" name="first">
+                                  <div class="form-img" id="form-img">
+                                      <div class="img-left" id="img-left">
+
+                                      </div>
+                                      <div class="img-right" id="img-right">
+
+                                      </div>
+                                  </div>
+                            </el-tab-pane>
+                            <el-tab-pane label="考核评估" name="second">
+                                  <div class="form-img" id="form-img">
+                                      考核评估
+                                  </div>
+                            </el-tab-pane>
+                            <el-tab-pane label="实时监控" name="third">
+                                  <div class="form-img" id="form-img">
+                                      实时监控
+                                  </div>
+                            </el-tab-pane>
+                          </el-tabs>
+                          
+                      </div>
+                      <div class="content-bottom-entrance">
+                              <div class="entrance-title">
+                                 <i class="iconfont icon-daiban" style="color:#38b5e6"></i>&nbsp;&nbsp;
+                                 <span>快捷入口</span>
+                                 <a href="#">
+                                      <span class="get-more pull-right">
+                                        <i class="iconfont icon-more"></i>
+                                      </span>
+                                 </a>
+                              </div>
+                              <div class="entrance-content">
+                                  <dl>
+                                      <a href="#">
+                                          <dt class="color-blue"><i  class="iconfont icon-train"></i></dt>
+                                          <dd>软件运营</dd>
+                                      </a>
+                                  </dl>
+                                  
+                                  <dl>
+                                      <a href="#">
+                                          <dt class="color-yellow"><i  class="iconfont icon-train"></i></dt>
+                                          <dd>软件运营</dd>
+                                      </a>
+                                  </dl>
+                                  <dl>
+                                      <a href="#">
+                                          <dt class="color-red"><i  class="iconfont icon-train"></i></dt>
+                                          <dd>软件运营</dd>
+                                      </a>
+                                  </dl>
+                                  <dl>
+                                      <a href="#">
+                                          <dt class="color-blue"><i  class="iconfont icon-train"></i></dt>
+                                          <dd>软件运营</dd>
+                                      </a>
+                                  </dl>
+                                  <dl>
+                                      <a href="#">
+                                          <dt class="color-orange"><i  class="iconfont icon-train"></i></dt>
+                                          <dd>软件运营</dd>
+                                      </a>
+                                  </dl>
+                                  <dl>
+                                      <a href="#">
+                                          <dt class="color-deepblue"><i  class="iconfont icon-train"></i></dt>
+                                          <dd>软件运营</dd>
+                                      </a>
+                                  </dl>
+                                  <dl>
+                                      <a href="#">
+                                          <dt class="color-red"><i  class="iconfont icon-train"></i></dt>
+                                          <dd>软件运营</dd>
+                                      </a>
+                                  </dl>
+                                  <dl>
+                                      <a href="#">
+                                          <dt class="color-green"><i  class="iconfont icon-train"></i></dt>
+                                          <dd>软件运营</dd>
+                                      </a>
+                                  </dl>
+                                  <dl>
+                                      <a href="#">
+                                          <dt class="color-orange"><i  class="iconfont icon-train"></i></dt>
+                                          <dd>软件运营</dd>
+                                      </a>
+                                  </dl>
+                                  <dl>
+                                      <a href="#">
+                                          <dt class="color-yellow"><i  class="iconfont icon-train"></i></dt>
+                                          <dd>软件运营</dd>
+                                      </a>
+                                  </dl>
+                                  <dl>
+                                      <a href="#">
+                                          <dt class="color-red"><i  class="iconfont icon-train"></i></dt>
+                                          <dd>软件运营</dd>
+                                      </a>
+                                  </dl>
+                                  <dl>
+                                      <a href="#">
+                                          <dt class="color-orange"><i  class="iconfont icon-train"></i></dt>
+                                          <dd>软件运营</dd>
+                                      </a>
+                                  </dl>
+                              </div>
+                      </div>
+                  </div>           
+              </div>
+              <!-- content end -->
+          </div>
+      </div>
+
+    </div>
+</body>
+<script type="text/javascript" src="./packages/vue/dist/vue.js"></script>
+<script type="text/javascript" src="./packages/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="./packages/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./packages/element-ui/lib/index.js"></script>
+<script type="text/javascript" src="./packages/echarts/dist/echarts.min.js"></script>
+<script type="text/javascript" src="./js/common.js"></script>
+<script type="text/javascript" src="./js/home.js"></script>
+
+<!-- 组件 -->
+<!-- <script type="text/javascript" src="../components/header.html"></script> -->
+<!-- <script type="text/javascript" src="../components/headerComponent.js"></script> -->
+<script type="text/javascript">
+   new Vue({
+     el:"#app",
+     data: function() {
+        return {
+          input2: '',
+          activeName: 'first'
+        }
+      },
+      methods: {
+        handleIconClick(ev) {
+          console.log(ev);
+        },
+        handleClick(tab, event) {
+            console.log(tab, event);
+          }
+      }
+   })
+
+</script>
+</html>

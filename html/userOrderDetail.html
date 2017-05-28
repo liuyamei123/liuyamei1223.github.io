@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" type="text/css" href="../packages/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="../packages/element-ui/lib/theme-default/index.css">
+  <link rel="stylesheet" href="../icon_font/iconfont.css">
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/cmdbAccountDetail.css">
+  <link rel="stylesheet" href="../css/userOrderDetail.css">
+</head>
+<body>
+    <div id="app">
+       <!--heaer begin-->
+      <header class="header dropdown">
+              <div class="logo_img">
+                  <img src="../images/logo.png" height="37" width="220">
+              </div>
+              
+              <!--样式内容为layout.css 509行至559行-->
+              <div class="header_nav">
+                  <ul class="header_icon" id="header_icon">
+                      <li data-toggle="tooltip" data-placement="bottom" title="运营 ">
+                          <a href="#" class="icon_home"><i class="iconfont icon-home"></i></a>
+                          <!-- <router-link to="/home">home</router-link> -->
+                      </li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="运营门户 ">
+                          <a href="#" class="icon_portal"><i class="iconfont icon-portal"></i></a>
+                      </li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="运营门户 ">
+                          <a href="#" class="icon_inspect"><i class="iconfont icon-inspect"></i></a>
+                      </li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="CMDB ">
+                         <a href="#" class="icon_wOrder"><i class="iconfont icon-wOrder"></i></a>
+                          <!-- <a href="#" class="icon_wOrder" ><i class="iconfont icon-wOrder"></i></a> -->
+                      </li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="运营门户 ">
+                          <a href="#" class="icon_qua"><i class="iconfont icon-qua"></i></a>
+                      </li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="运营门户 ">
+                          <a href="#" class="icon_track"><i class="iconfont icon-track"></i></a>
+                      </li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="运营门户 ">
+                          <a href="#" class="icon_train"><i class="iconfont icon-train"></i></a>
+                      </li>
+                      <li data-toggle="tooltip" data-placement="bottom" title="运营门户 ">
+                          <a href="#" class="icon_security"><i class="iconfont icon-security"></i></a>
+                      </li>
+
+                  </ul>
+              </div>               
+
+              <div class="pull-right">
+                   <!--必须引用<a></a> 和data-toggle="dropdown"属性和class="dropdown-menu"才能调用-->
+                  <a class="qh-user cursor" id="dropdownMenu1" data-toggle="dropdown">
+                      <i class="iconfont icon-user"></i> <span> 超级管理员 </span>
+                      <i class="iconfont icon-arrow-down"></i>
+                  </a>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                      <li class="dropdown-li" role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-user mr5"></i>个人中心</a></li>
+                      <li class="dropdown-li" role="presentation"><a role="menuitem" tabindex="-1" href="#"><i class="fa fa-sign-out mr5"></i>退出</a></li>
+                  </ul>
+
+                  <a class="qh-user cursor">
+                      <i class="iconfont icon-help"></i>
+                  </a>
+                  <a class="qh-user cursor">
+                      <i class="iconfont icon-set"></i>
+                  </a>
+
+              </div>
+      </header>
+      <!--header end-->
+
+      <!-- 二级菜单 -->
+      <!-- content start -->
+      <div class="warp">
+          <!--sideBar begin-->
+          <div id="sideBar" class="clearfix">
+              <div class="sideBar"> <a class="sideBar-memu"><i class="glyphicon glyphicon-align-justify"></i></a>
+                  <ul class="sideBar-list">
+                      <li>
+                          <a href="#"><i class="iconfont icon-portal"></i>
+                              <span class="tooltips">
+                                  <i class="arrow_left_ico"></i>
+                                  <span class="tooltips-con">发文流程</span>
+                              </span>
+                          </a>
+                      </li>
+                      <!-- <li>
+                          <a href="#"><i class="iconfont icon-portal"></i>
+                              <span class="tooltips">
+                                  <i class="arrow_left_ico"></i>
+                                  <span class="tooltips-con">发文流程1</span>
+                              </span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#"><i class="iconfont icon-security"></i>
+                              <span class="tooltips">
+                                  <i class="arrow_left_ico"></i>
+                                  <span class="tooltips-con">草稿箱</span>
+                              </span>
+                          </a>
+                      </li>
+                      <li>
+                          <a href="#"><i class="iconfont icon-call"></i>
+                              <span class="tooltips"><i class="arrow_left_ico"></i><span class="tooltips-con">草稿箱</span></span>
+                          </a>
+                      </li> -->
+                  </ul>
+              </div>
+              <div class="sideBar-open"> <a class="sideBar-memu-open"><i class="glyphicon glyphicon-align-justify"></i></a>
+                  <ul class="sideBar-list">
+                      <li><a href="#"><i class="iconfont icon-portal"></i><span class="padding-left">账户信息</span></a></li>
+                      <!-- <li><a href="#"><i class="iconfont icon-portal"></i><span class="padding-left">官网集成</span></a></li>
+                      <li><a href="#"><i class="iconfont icon-security"></i><span class="padding-left">信息发布</span></a></li>
+                      <li><a href="#"><i class="iconfont icon-call"></i><span class="padding-left">建设日历</span></a></li>
+                      
+                      <li class="houbu" style="display: none;"><a href="../emerg/emerg.html"><i class="fa fa-shirtsinbulk"></i><span class="padding-left">应急指挥</span></a></li> -->
+                  </ul>
+              </div>
+          </div>
+          <!--sideBar end-->                
+          
+          <!-- 二级菜单内容 -->
+          <div class="right-warp">
+              <!--title start-->
+              <div class="title">
+                  <!--crumbs begin-->
+                  <div class="crumbs">
+                      <p>账户信息</p>
+                      <div class="pull-right right-search">
+                          <el-input
+                            placeholder="请搜索"
+                            icon="search"
+                            v-model="input2"
+                            :on-icon-click="handleIconClick">
+                          </el-input>
+                      </div>    
+                 </div>
+                  <!-- crumbs end -->                                  
+              </div>
+              <!--title end-->
+
+              <!-- content begin -->
+              <div class="content-info">
+                    <div class="account-info">
+                       <h3>用户信息</h3>
+                       <table>
+                          <tr>
+                            <th>订单号</th>
+                            <td>SY-000005</td>
+                            <th>手机号</th>
+                            <td>13812787654</td>
+                          </tr>
+                          <tr>
+                            <th>姓名</th>
+                            <td>Angela</td>
+                            <th>邮箱/账户名</th>
+                            <td>quapgn@163.com</td>
+                          </tr>
+                          <tr>
+                            <th>期望试用产品</th>
+                            <td>APPFactory、APIManager、PaaSOS、APIManager</td>
+                            <th>所在单位</th>
+                            <td>怡和祥云</td>
+                          </tr>
+                          <tr>
+                            <th>开通产品</th>
+                            <td>APPFactory、APIManager、PaaSOS、APIManager</td>
+                            <th>用户来源</th>
+                            <td>官网、我司销售（Angela）</td>
+                          </tr>
+                          <tr>
+                            <th>剩余使用天数</th>
+                            <td>8</td>
+                            <th>申请时间</th>
+                            <td>20170520 20：00</td>
+                          </tr>
+                          <tr>
+                            <th>当前状态</th>
+                            <td>正常</td>
+                            <th>开通时间</th>
+                            <td>20170520 20：00</td>
+                          </tr>
+                       </table>
+                    </div>
+                    <div class="order-info">
+                       <h3>订单配置详情</h3>
+                       <table>
+                          <tr>
+                            <th>产品</th>
+                            <th>配置信息</th>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td></td>
+                            <td></td>
+                          </tr>
+                       </table>
+                    </div>      
+              </div>
+              <!-- content end -->
+       </div>
+      </div>
+
+    </div>
+</body>
+<script type="text/javascript" src="../packages/vue/dist/vue.js"></script>
+<script type="text/javascript" src="../packages/jquery/dist/jquery.js"></script>
+<script type="text/javascript" src="../packages/bootstrap/dist/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../packages/element-ui/lib/index.js"></script>
+<script type="text/javascript" src="../js/common.js"></script>
+<script type="text/javascript" src="../packages/echarts/dist/echarts.min.js"></script>
+
+<script type="text/javascript">
+   const cityOptions = ['APPFactory', 'APIManager', 'PaaSOS', 'APIManager1'];
+   new Vue({
+     el:"#app",
+     data: function() {
+        return {
+            input2: '',
+            activeName: 'first',
+        }
+      },
+      methods: {
+          handleIconClick(ev) {
+          console.log(ev);
+        }
+      }
+   })
+
+</script>
+</html>

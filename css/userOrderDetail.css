@@ -1,0 +1,85 @@
+// .right-warp{
+//     position: absolute;
+//     width: 96.6%;
+//     left: 55px;
+//     background-color: #fbfbfb;
+//     overflow-y: auto;
+//     overflow-x: hidden;
+// }
+
+// .right-warp .right-search{
+//     margin-right: 30px;
+// }
+
+// /*面包屑*/
+// .title{
+//     padding: 0px;
+//     position: relative;
+//     height: 48px;
+//     line-height: 48px;
+//     border-bottom: 1px solid #38b5e6;
+// }
+// .title .crumbs p{
+//     display: inline-block;
+//     text-align: center;
+//     height: 48px;
+//     width: 110px; 
+//     /*float: left;*/
+//     position: absolute;
+//     /*left: 55px;*/
+//     /*margin-left: 55px;  */
+// }
+// .title .crumbs p{
+//     border-bottom: 3px solid #38b5e6;
+// }
+
+// .title .pull-right{
+//     float: right
+// }
+
+// .crumbs span.noBorBot{
+//     border-bottom: transparent
+// }
+// .border-bottom{
+//     border-bottom:1px solid #E5E5E5;
+// }
+/*面包屑结束*/
+
+/*content部分开始*/
+/*.content-info{
+   margin-top: 20px;
+   height: 600px;
+   width: 100%;
+   border:1px solid #333;
+}*/
+.content-info h3{
+   margin-bottom: 20px;
+   font-weight: 800;
+   font-size: 20px;
+}
+.content-info .account-info{
+   margin: 20px;
+   width:1200px;
+}
+.content-info .account-info table tr>th,td{
+   width: 250px;
+   text-align:  center;
+   border: 1px solid #ccc;
+   height: 30px;
+   line-height: 30px;
+   padding:0 20px;
+}
+.content-info .account-info table tr>th{
+   background-color: #eef1f6;
+}
+.content-info .account-info table tr>td:hover{
+   background-color: #eef1f6;
+}
+.content-info .order-info{
+   margin: 0 20px;
+}
+.order-info th,td{
+   width: 500px;
+}
+
+/*content部分结束*/
